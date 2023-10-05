@@ -1,6 +1,7 @@
 package item2;
 // 자바빈즈 패턴 - 일관성이 깨지고, 불변으로 만들 수 없다.
 public class NutritionFactsJavaBeansPattern {
+    //필드 (기본값이 있다면) 기본값으로 초기화된다.
     private int servingSize = -1; // 필쉬 기본값 없음
     private int servings = -1; //필수; 기본값 없음
     private int calories = 0;
@@ -53,6 +54,7 @@ public class NutritionFactsJavaBeansPattern {
         cocaCola.setServings(1);
         cocaCola.setCalories(100);
         cocaCola.setSodium(11);
+        cocaCola.setFat(12);
         cocaCola.setCarbohydrate(22);
 
     }
